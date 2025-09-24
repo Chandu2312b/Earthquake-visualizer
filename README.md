@@ -1,16 +1,76 @@
-# React + Vite
+Earthquake Visualizer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Earthquake Visualizer is an interactive web application that visualizes recent earthquake activity around the world. Built with React and React-Leaflet, it allows users to explore seismic events in real-time using data from the USGS Earthquake API.
 
-Currently, two official plugins are available:
+🧑‍💻 User Persona
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Name: Casey
+Occupation: Geography Student
+Need: Visualize recent earthquake activity worldwide to understand seismic patterns.
 
-## React Compiler
+🌟 Features
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Displays recent earthquakes on an interactive world map using React-Leaflet.
 
-## Expanding the ESLint configuration
+Shows magnitude, location, depth, and time for each earthquake.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Color-coded markers to indicate the severity of earthquakes.
+
+Zoomable and draggable map for detailed exploration.
+
+Data fetched real-time from USGS Earthquake API.
+
+Mobile-friendly and responsive UI.
+
+🛠️ Technologies Used
+
+Frontend: React, React-Leaflet, TailwindCSS (optional), JavaScript
+
+Mapping Library: React-Leaflet
+
+Data Source: USGS Earthquake API
+
+Bundler: Vite
+
+🚀 Installation
+
+Clone the repository:
+
+git clone <repository-url>
+cd earthquake-visualizer
+
+
+Install dependencies:
+
+npm install
+
+
+Run the development server:
+
+npm run dev
+
+
+Open your browser at http://localhost:5173
+
+📦 Available Scripts
+
+npm run dev: Starts the development server
+
+npm run build: Builds the app for production
+
+npm run preview: Previews the production build
+
+🔗 API Used
+
+USGS Earthquake API – Provides real-time earthquake data in GeoJSON format:
+
+https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson
+
+
+🎯 Future Improvements
+
+Add filter by magnitude or time range
+
+Cluster nearby earthquakes for better visualization using react-leaflet-cluster
+
+Display graphs or charts of earthquake trends
